@@ -167,7 +167,8 @@ Con la función de ggplot nos ayudamos para crear historigramas de las frecuenci
 Historigrama  de  Pisac
 
         ggplot(tmedia_pisco, aes(PISAC)) + geom_histogram(colour= 'blue')
-![Rplot10](https://user-images.githubusercontent.com/78572913/107051786-dd476400-679a-11eb-8642-672abe1b27ce.png
+![Rplot10](https://user-images.githubusercontent.com/78572913/107051786-dd476400-679a-11eb-8642-672abe1b27ce.png)
+
 
 Historigrama de Paruro
 
@@ -182,7 +183,8 @@ Histograma de Colquepata
 Histograma de CCatca
 
     ggplot(tmedia_pisco, aes(CCATCCA)) + geom_histogram(colour= 'blue')
-![Rplot13](https://user-images.githubusercontent.com/78572913/107051899-fe0fb980-679a-11eb-87e4-d97e09c01b59.png
+![Rplot13](https://user-images.githubusercontent.com/78572913/107051899-fe0fb980-679a-11eb-87e4-d97e09c01b59.png)
+
 
 Histograma de  CayCay
 
