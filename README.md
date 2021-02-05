@@ -104,6 +104,8 @@ Asignación de series temporales para las precipitaciones y temperaturas, se asi
         catca <-  plot(Pp_pisco$fecha,Pp_pisco$CCATCCA, type = "l", col= 'blue',
                        main= 'Serie de Tiempo de la estación ccatcca', xlab= 'Años',
                        ylab= 'Precipitación')
+![Rplot03](https://user-images.githubusercontent.com/77855207/107051874-f7814200-679a-11eb-9d71-e6aae3fe75a3.png)
+
         catca <-  plot(Pp_pisco$fecha,Pp_pisco$CCATCCA, type = "l", col= 'blue',
                        main= 'Serie de Tiempo de la estación Ccatcca', xlab= 'Años',
                        ylab= 'Precipitación')
