@@ -124,10 +124,16 @@ Asimismo, también ejecutaremos el ggplot para gráficar la precipitación de Pa
         names(Pp_pisco)
         ggplot(Pp_pisco, aes(fecha, PARURO)) +
           geom_line() +
-          geom_smooth(span = 0.4)
+          geom_smooth(span = 0.4
+         
+![Rplot06](https://user-images.githubusercontent.com/78572913/107046803-0b29aa00-6795-11eb-989b-e2c569c8fa44.png) 
+Gráfico de precipitación de colquepata 
+
         ggplot(Pp_pisco, aes(fecha, COLQUEPATA)) +
           geom_line() +
           geom_smooth(span = 0.5)
+![Rplot07](https://user-images.githubusercontent.com/78572913/107046981-4926ce00-6795-11eb-8320-669a8c04d0bf.png)
+
         ggplot(Pp_pisco, aes(fecha, CAICAY)) +
           geom_line() +
           geom_smooth(span = 0.5)
