@@ -112,8 +112,6 @@ Asignación de series temporales para las precipitaciones y temperaturas, se asi
         caycay <- plot(Pp_pisco$fecha,Pp_pisco$CAICAY, type = "l", col= 'blue',
                        main= 'Serie de Tiempo de la estación Caicay', xlab= 'Años',
                        ylab= 'Precipitación')
-![Rplot04](https://user-images.githubusercontent.com/77855207/107051957-17186a80-679b-11eb-9fb1-e3eef68e81c4.png)
-
  
         ########################################
         #########graficas avanzadas###########
@@ -169,18 +167,26 @@ Con la función de ggplot nos ayudamos para crear historigramas de las frecuenci
 Historigrama  de  Pisac
 
         ggplot(tmedia_pisco, aes(PISAC)) + geom_histogram(colour= 'blue')
+![Rplot10](https://user-images.githubusercontent.com/78572913/107051786-dd476400-679a-11eb-8642-672abe1b27ce.png
+
 Historigrama de Paruro
 
         ggplot(tmedia_pisco, aes(PARURO)) + geom_histogram(colour= 'blue')
-        
+ ![Rplot11](https://user-images.githubusercontent.com/78572913/107051830-e9332600-679a-11eb-8002-72eb1acfbc26.png) 
+ 
 Histograma de Colquepata
 
-        ggplot(tmedia_pisco, aes(COLQUEPATA) + geom_histogram(colour= 'blue
-        
+        ggplot(tmedia_pisco, aes(COLQUEPATA) + geom_histogram(colour= 'blue 
+![Rplot12 (1)](https://user-images.githubusercontent.com/78572913/107051862-f3552480-679a-11eb-9efb-a9afdd164c3b.png)  
+
 Histograma de CCatca
-                      ggplot(tmedia_pisco, aes(CCATCCA)) + geom_histogram(colour= 'blue)
-                      #Jadibamba
-                      ggplot(tmedia_pisco, aes(CAICAY)) + geom_histogram(colour= 'blue')
+
+    ggplot(tmedia_pisco, aes(CCATCCA)) + geom_histogram(colour= 'blue')
+![Rplot13](https://user-images.githubusercontent.com/78572913/107051899-fe0fb980-679a-11eb-87e4-d97e09c01b59.png
+
+Histograma de  CayCay
+
+    ggplot(tmedia_pisco, aes(CAICAY)) + geom_histogram(colour= 'blue')    
                       ggplot(Pp_pisco, aes(fecha ,PISAC)) +
                         geom_path(colour = "green")
                       ggplot(Pp_pisco, aes(fecha ,PARURO)) +
