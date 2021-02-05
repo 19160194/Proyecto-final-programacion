@@ -119,7 +119,7 @@ Ahora  ejecutaremos el comando ggplot para graficar la  precipitación  en
           geom_smooth(span = 0.
 ![Rplot05](https://user-images.githubusercontent.com/78572913/107045499-90ac5a80-6793-11eb-99b6-0c940a4e3cdf.png)
 
-          
+Asimismo, también ejecutaremos el ggplot para gráficar la precipitación de Paruro          
 
         names(Pp_pisco)
         ggplot(Pp_pisco, aes(fecha, PARURO)) +
