@@ -127,7 +127,7 @@ Asignación de series temporales para las precipitaciones y temperaturas, se asi
 ![CCATCCA (1)](https://user-images.githubusercontent.com/77855207/107053516-e6d1cb80-679c-11eb-877b-d0c3c5bb3e4e.png)
 
         caycay <- plot(Pp_pisco$fecha,Pp_pisco$CAICAY, type = "l", col= 'blue',
-               main= 'Serie de Tiempo de la estación Caicay', xlab= 'Año',
+               main= 'Serie de Tiempo de la estación Cay cay', xlab= 'Año',
                ylab= 'Precipitación')
 ![Rplot04](https://user-images.githubusercontent.com/77855207/107051957-17186a80-679b-11eb-9fb1-e3eef68e81c4.png)
 
