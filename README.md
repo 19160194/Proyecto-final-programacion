@@ -106,7 +106,9 @@ Asignación de series temporales para las precipitaciones y temperaturas, se asi
         
  Añadimos los gráficos de serie de tiempo de cada estación meteorológica, en la que se presentan la precipitación por un lapso de tiempo
  
-        pisac <- plot(Pp_pisco$fecha,Pp_pisco$PISAC, type = "l", col= 'blue',main= 'Serie de 
+        pisac <- plot(Pp_pisco$fecha,Pp_pisco$PISAC, type = "l", col= 'blue',
+              main= 'Serie de Tiempo de la estación pisac', xlab= 'Año',
+              ylab= 'Precipitación')
 ![Rplot](https://user-images.githubusercontent.com/78572913/107041783-e7fbfc00-678e-11eb-8c91-02ac8af39e89.png)
 
         Paruro <- plot(Pp_pisco$fecha, Pp_pisco$PARURO, type = "l", col= 'blue',
