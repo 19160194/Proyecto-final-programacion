@@ -188,14 +188,4 @@ Histograma de CCatca
 Histograma de  CayCay
 
     ggplot(tmedia_pisco, aes(CAICAY)) + geom_histogram(colour= 'blue')    
-                      ggplot(Pp_pisco, aes(fecha ,PISAC)) +
-                        geom_path(colour = "green")
-                      ggplot(Pp_pisco, aes(fecha ,PARURO)) +
-                        geom_path(colour = "green")
-                      ggplot(Pp_pisco, aes(fecha ,COLQUEPATA)) +
-                        geom_path(colour = "green")
-                      ggplot(Pp_pisco, aes(fecha ,CCATCCA)) +
-                        geom_path(colour = "green")
-                      ggplot(Pp_pisco, aes(fecha ,CAICAY)) +
-                        geom_path(colour = "green")
 
