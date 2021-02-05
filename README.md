@@ -20,7 +20,6 @@ Ramos Cerna Alejandra Gianella
     raster::projection(long_lat) <- raster::projection(raster_tmax)
     raster::projection(long_lat) <- raster::projection(raster_tmin)
 
-![Rplot](https://user-images.githubusercontent.com/78572913/107041783-e7fbfc00-678e-11eb-8c91-02ac8af39e89.png)
 
 
         # PRECIPITACION
@@ -79,9 +78,14 @@ Ramos Cerna Alejandra Gianella
         View(tmedia_pisco)
         write.csv(tmedia_pisco, "FINAL/DATA EN CSV/PP ESTACIONES/tmedia.csv")
         colnames(tmedia_pisco)
+        
+ Añadimos los gráficos de serie de tiempo de cada estación meteorológica, en la que se presentan la precipitación por un lapso de tiempo
+ 
         pisac <- plot(Pp_pisco$fecha,Pp_pisco$PISAC, type = "l", col= 'blue',
                       main= 'Serie de Tiempo de la estación pisac', xlab= 'Años',
-                      ylab= 'Precipitación')
+                      ylab= 'Precipitación
+![Rplot](https://user-images.githubusercontent.com/78572913/107041783-e7fbfc00-678e-11eb-8c91-02ac8af39e89.png)
+
         Paruro <- plot(Pp_pisco$fecha, Pp_pisco$PARURO, type = "l", col= 'blue',
                        main= 'Serie de Tiempo de la estación Paruro', xlab= 'Años',
                        ylab= 'Precipitación')
