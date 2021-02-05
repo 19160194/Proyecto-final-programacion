@@ -109,6 +109,8 @@ Asignación de series temporales para las precipitaciones y temperaturas, se asi
         caycay <- plot(Pp_pisco$fecha,Pp_pisco$CAICAY, type = "l", col= 'blue',
                        main= 'Serie de Tiempo de la estación Caicay', xlab= 'Años',
                        ylab= 'Precipitación')
+![Rplot04](https://user-images.githubusercontent.com/77855207/107051957-17186a80-679b-11eb-9fb1-e3eef68e81c4.png)
+
  
         ########################################
         #########graficas avanzadas###########
