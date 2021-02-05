@@ -45,7 +45,7 @@ Ramos Cerna Alejandra Gianella
         install.packages(c("tidyverse", "ggplot2", "dplyr"))
         install.packages(c("tidyverse", "ggplot2", "dplyr"))
         
- CARGAMOS LAS LIBRERIAS  
+ Cargamos las librerías  
  
         library(tidyverse)
         library(ggplot2)
@@ -144,13 +144,17 @@ Gráfico de precipitación de Caycay
 
         ggplot(Pp_pisco, aes(fecha, CAICAY)) +
           geom_line() +
-          geom_smooth(span = 0.5)
+          geom_smooth(span = 0.5
+![Rplot08](https://user-images.githubusercontent.com/78572913/107049819-8d679d80-6798-11eb-818b-e669c9b162aa.png)  
+
 Gráfico de precipitación de Ccatcca
 
         ggplot(Pp_pisco, aes(fecha, CCATCCA)) +
           geom_line() +
           geom_smooth(span = 0.5)
-        names(Pp_pisco)
+        names(Pp_pisco
+![Rplot09](https://user-images.githubusercontent.com/78572913/107049915-a708e500-6798-11eb-8bc5-131a03061a98.png)
+
         ###########Poligonos de frecuencia para temperaturas
         #Pisac
         ggplot(tmedia_pisco, aes(PISAC)) + geom_histogram(colour= 'blue')
