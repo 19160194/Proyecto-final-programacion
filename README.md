@@ -1,9 +1,13 @@
 # Proyecto-final-programacion
 En este trabajo nos centraremos en la comparación de datos de Senamhi  de  algunas provincias del departamento de Cusco con data Pisco. Nos centraremos en data de precipitación y temperatura.
-Este trabajo fue realizado por los siguientes estudiantes:
-Camacho Vega  Mercedes Emerita
+Este trabajo fue realizado por los siguientes estudiantes
+
+Camacho Vega  Mercedes 
+
 Huayllani  Panuera Dialdina
+
 León Chaiña  Lisbeth Karola
+
 Ramos Cerna Alejandra Gianella
 
 
@@ -57,7 +61,6 @@ Leemos las temperaturas
  Instalamos las librerías
  
         install.packages(c("tidyverse", "ggplot2", "dplyr"))
-        install.packages(c("tidyverse", "ggplot2", "dplyr"))
         
  Cargamos las librerías  
  
@@ -102,8 +105,6 @@ Asignación de series temporales para las precipitaciones y temperaturas, se asi
  Añadimos los gráficos de serie de tiempo de cada estación meteorológica, en la que se presentan la precipitación por un lapso de tiempo
  
         pisac <- plot(Pp_pisco$fecha,Pp_pisco$PISAC, type = "l", col= 'blue',
-                      main= 'Serie de Tiempo de la estación pisac', xlab= 'Años',
-                      ylab= 'Precipitación
 ![Rplot](https://user-images.githubusercontent.com/78572913/107041783-e7fbfc00-678e-11eb-8c91-02ac8af39e89.png)
 
         Paruro <- plot(Pp_pisco$fecha, Pp_pisco$PARURO, type = "l", col= 'blue',
@@ -131,7 +132,7 @@ Asignación de series temporales para las precipitaciones y temperaturas, se asi
  
             library(ggplot2)  
             
-Ahora  ejecutaremos el comando ggplot para graficar la  precipitación  en 
+Ahora  ejecutaremos el comando ggplot para graficar la  precipitación-temperatura en Pisac
 
             ggplot(Pp_pisco, aes(fecha, PISAC)) +
               geom_line() +
@@ -142,7 +143,7 @@ Ahora  ejecutaremos el comando ggplot para graficar la  precipitación  en
           
 ![Rplot05](https://user-images.githubusercontent.com/78572913/107045499-90ac5a80-6793-11eb-99b6-0c940a4e3cdf.png)
 
-Asimismo, también ejecutaremos el ggplot para gráficar la precipitación de Paruro          
+Asimismo, también ejecutaremos el ggplot para graficar la precipitación-temperatura de Paruro          
 
         names(Pp_pisco)
         ggplot(Pp_pisco, aes(fecha, PARURO)) +
@@ -151,7 +152,7 @@ Asimismo, también ejecutaremos el ggplot para gráficar la precipitación de Pa
          
 ![Rplot06](https://user-images.githubusercontent.com/78572913/107046803-0b29aa00-6795-11eb-989b-e2c569c8fa44.png) 
 
-Gráfico de precipitación de colquepata 
+Gráfico de precipitación-temperatura de Colquepata
 
         ggplot(Pp_pisco, aes(fecha, COLQUEPATA)) +
           geom_line() +
@@ -159,7 +160,7 @@ Gráfico de precipitación de colquepata
           
 ![Rplot07](https://user-images.githubusercontent.com/78572913/107046981-4926ce00-6795-11eb-8320-669a8c04d0bf.png)
 
-Gráfico de precipitación de Caycay
+Gráfico de precipitación-temperatura de CayCay
 
         ggplot(Pp_pisco, aes(fecha, CAICAY)) +
           geom_line() +
@@ -167,7 +168,7 @@ Gráfico de precipitación de Caycay
           
 ![Rplot08](https://user-images.githubusercontent.com/78572913/107049819-8d679d80-6798-11eb-818b-e669c9b162aa.png)  
 
-Gráfico de precipitación de Ccatcca
+Gráfico de precipitación-temperatura  de Ccatcca
 
         ggplot(Pp_pisco, aes(fecha, CCATCCA)) +
           geom_line() +
@@ -179,14 +180,14 @@ Gráfico de precipitación de Ccatcca
 
 Con la función de ggplot nos ayudamos para crear historigramas de las frecuencias de temperaturas
 
-Historigrama  de  Pisac
+Histograma de Pisac
 
         ggplot(tmedia_pisco, aes(PISAC)) + geom_histogram(colour= 'blue')
         
 ![Rplot10](https://user-images.githubusercontent.com/78572913/107051786-dd476400-679a-11eb-8642-672abe1b27ce.png)
 
 
-Historigrama de Paruro
+Histograma de Paruro
 
         ggplot(tmedia_pisco, aes(PARURO)) + geom_histogram(colour= 'blue')
         
