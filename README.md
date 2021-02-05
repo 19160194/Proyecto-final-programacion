@@ -1,10 +1,10 @@
 # Proyecto-final-programacion
 En este trabajo nos centraremos en la comparación de datos de Senamhi  de  algunas provincias del departamento de Cusco con data Pisco. Nos centraremos en data de precipitación y temperatura.
-    Este trabajo fue realizado por los siguientes estudiantes:
-    Camacho Vega  Mercedes Emerita
-    Huayllani  Panuera Dialdina
-    León Chaiña  Lisbeth Karola
-    Ramos Cerna Alejandra Gianella
+Este trabajo fue realizado por los siguientes estudiantes:
+Camacho Vega  Mercedes Emerita
+Huayllani  Panuera Dialdina
+León Chaiña  Lisbeth Karola
+Ramos Cerna Alejandra Gianella
 
 
 Primero instalamos las librerias
@@ -35,21 +35,20 @@ Leemos la Precipitation
         data_long_lat_pp <- t(raster_pp[points_long_lat_pp])
         colnames(data_long_lat_pp) <- as.character(long_lat$NN)
         write.csv(data_long_lat_pp, "FINAL/DATA PISCO/PP MENSUAL/prep.csv", quote = F)
-Lemos la teemperature maxima
+Leemos las temperaturas
 
         #TEMPERATURA MAXIMA
         points_long_lat_tmax <- raster::extract(raster_tmax[[1]], long_lat, cellnumbers = T)[,1]
         data_long_lat_tmax <- t(raster_tmax[points_long_lat_tmax])
         colnames(data_long_lat_tmax) <- as.character(long_lat$NN)
         write.csv(data_long_lat_tmax, "FINAL/DATA PISCO/TMAX/tmax.csv", quote = F)
-Lemos la teemperature minima
 
         #TEMPERATURA MINIMA
         points_long_lat_tmin <- raster::extract(raster_tmin[[1]], long_lat, cellnumbers = T)[,1]
         data_long_lat_tmin <- t(raster_tmin[points_long_lat_tmin])
         colnames(data_long_lat_tmin) <- as.character(long_lat$NN)
         write.csv(data_long_lat_tmin, "FINAL/DATA PISCO/TMIN/tmin.csv", quote = F)
- Lemos la teemperature media
+ 
  
         #TEMPERATURA MEDIA
         tmedia <- (data_long_lat_tmax+data_long_lat_tmin)/2
@@ -209,14 +208,4 @@ Histograma de CCatca
 Histograma de  CayCay
 
     ggplot(tmedia_pisco, aes(CAICAY)) + geom_histogram(colour= 'blue')    
-                      ggplot(Pp_pisco, aes(fecha ,PISAC)) +
-                        geom_path(colour = "green")
-                      ggplot(Pp_pisco, aes(fecha ,PARURO)) +
-                        geom_path(colour = "green")
-                      ggplot(Pp_pisco, aes(fecha ,COLQUEPATA)) +
-                        geom_path(colour = "green")
-                      ggplot(Pp_pisco, aes(fecha ,CCATCCA)) +
-                        geom_path(colour = "green")
-                      ggplot(Pp_pisco, aes(fecha ,CAICAY)) +
-                        geom_path(colour = "green")
-
+![Rplot14](https://user-images.githubusercontent.com/78572913/107053947-79726a80-679d-11eb-9f52-6d3013d1594b.png)
