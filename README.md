@@ -1,13 +1,9 @@
 # Proyecto-final-programacion
 En este trabajo nos centraremos en la comparación de datos de Senamhi  de  algunas provincias del departamento de Cusco con data Pisco. Nos centraremos en data de precipitación y temperatura.
 Este trabajo fue realizado por los siguientes estudiantes:
-
 Camacho Vega  Mercedes Emerita
-
 Huayllani  Panuera Dialdina
-
 León Chaiña  Lisbeth Karola
-
 Ramos Cerna Alejandra Gianella
 
     install.packages(c("raster", "ncdf4"))
@@ -98,8 +94,6 @@ Asignación de series temporales para las precipitaciones y temperaturas, se asi
         Paruro <- plot(Pp_pisco$fecha, Pp_pisco$PARURO, type = "l", col= 'blue',
                        main= 'Serie de Tiempo de la estación Paruro', xlab= 'Años',
                        ylab= 'Precipitación')
-![image](https://user-images.githubusercontent.com/78572913/107049584-49749880-6798-11eb-8bbc-6291cb2e85ec.png)
-
         colquepata <- plot(Pp_pisco$fecha,Pp_pisco$COLQUEPATA, type = "l", col= 'blue',
                            main= 'Serie de Tiempo de la estación Colquepata', xlab= 'Años',
                            ylab= 'Precipitación')
@@ -161,14 +155,22 @@ Gráfico de precipitación de Ccatcca
         names(Pp_pisco
 ![Rplot09](https://user-images.githubusercontent.com/78572913/107049915-a708e500-6798-11eb-8bc5-131a03061a98.png)
 
-        ###########Poligonos de frecuencia para temperaturas
-        #Pisac
+
+Con la función de ggplot nos ayudamos para crear historigramas de las frecuencias de temperaturas
+
+Historigrama  de  Pisac
+
         ggplot(tmedia_pisco, aes(PISAC)) + geom_histogram(colour= 'blue')
+Historigrama de Paruro
+
         ggplot(tmedia_pisco, aes(PARURO)) + geom_histogram(colour= 'blue')
-        ggplot(tmedia_pisco, aes(COLQUEPATA) + geom_histogram(colour= 'blue')
-         ggplot(tmedia_pisco, aes(COLQUEPATA) + geom_histogram(colour= 'blue')
-                      ggplot(tmedia_pisco, aes(COLQUEPATA)) + geom_histogram(colour= 'blue')
-                      ggplot(tmedia_pisco, aes(CCATCCA)) + geom_histogram(colour= 'blue')
+        
+Histograma de Colquepata
+
+        ggplot(tmedia_pisco, aes(COLQUEPATA) + geom_histogram(colour= 'blue
+        
+Histograma de CCatca
+                      ggplot(tmedia_pisco, aes(CCATCCA)) + geom_histogram(colour= 'blue)
                       #Jadibamba
                       ggplot(tmedia_pisco, aes(CAICAY)) + geom_histogram(colour= 'blue')
                       ggplot(Pp_pisco, aes(fecha ,PISAC)) +
