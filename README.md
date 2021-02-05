@@ -40,16 +40,18 @@ Ramos Cerna Alejandra Gianella
         #TEMPERATURA MEDIA
         tmedia <- (data_long_lat_tmax+data_long_lat_tmin)/2
         write.csv(tmedia, "FINAL/DATA PISCO/tmedia.csv", quote = F)
+ Instalamos las librerías
+ 
         install.packages(c("tidyverse", "ggplot2", "dplyr"))
         install.packages(c("tidyverse", "ggplot2", "dplyr"))
+        
+ CARGAMOS LAS LIBRERIAS  
+ 
         library(tidyverse)
         library(ggplot2)
         library(dplyr)
-        Pp_pisco <- read.csv("FINAL/DATA PISCO/PP MENSUAL/prep.csv", header = T, sep = ",") %>%
-          tibble() %>%
-          dplyr::select(-X) %>%
-          mutate(fecha = seq(as.Date("1981-01-01"), as.Date("2016-12-01"), by = "month"))
-        View(Pp_pisco)
+Asignación de series temporales para las precipitaciones y temperaturas, se asigna desde 1981 hasta el 2016 debido a la distribución temporal de los datos 
+
         Pp_pisco <- read.csv("FINAL/DATA PISCO/PP MENSUAL/prep.csv", header = T, sep = ",") %>%
           tibble() %>%
           dplyr::select(-X) %>%
@@ -57,6 +59,7 @@ Ramos Cerna Alejandra Gianella
         View(Pp_pisco)
         write.csv(Pp_pisco, "FINAL/DATA EN CSV/PP ESTACIONES/pp.csv")
         colnames(Pp_pisco)
+
         tmin_pisco <- read.csv("FINAL/DATA PISCO/TMIN/tmin.csv", header = T, sep = ",") %>%
           tibble() %>%
           dplyr::select(-X) %>%
@@ -64,13 +67,15 @@ Ramos Cerna Alejandra Gianella
         View(tmin_pisco)
         write.csv(tmin_pisco, "FINAL/DATA EN CSV/PP ESTACIONES/tmin.csv")
         colnames(tmin_pisco)
-        tmax_pisco <- read.csv("FINAL/DATA PISCO/TMIN/tmin.csv", header = T, sep = ",") %>%
+        
+      tmax_pisco <- read.csv("FINAL/DATA PISCO/TMAX/tmax.csv", header = T, sep = ",") %>%
           tibble() %>%
           dplyr::select(-X) %>%
           mutate(fecha = seq(as.Date("1981-01-01"), as.Date("2016-12-01"), by = "month"))
         View(tmax_pisco)
         write.csv(tmax_pisco, "FINAL/DATA EN CSV/PP ESTACIONES/tmax.csv")
         colnames(tmax_pisco)
+        
         tmedia_pisco <- read.csv("FINAL/DATA PISCO/tmedia.csv", header = T, sep = ",") %>%
           tibble() %>%
           dplyr::select(-X) %>%
@@ -127,6 +132,7 @@ Asimismo, también ejecutaremos el ggplot para gráficar la precipitación de Pa
           geom_smooth(span = 0.4
          
 ![Rplot06](https://user-images.githubusercontent.com/78572913/107046803-0b29aa00-6795-11eb-989b-e2c569c8fa44.png) 
+
 Gráfico de precipitación de colquepata 
 
         ggplot(Pp_pisco, aes(fecha, COLQUEPATA)) +
@@ -134,9 +140,13 @@ Gráfico de precipitación de colquepata
           geom_smooth(span = 0.5)
 ![Rplot07](https://user-images.githubusercontent.com/78572913/107046981-4926ce00-6795-11eb-8320-669a8c04d0bf.png)
 
+Gráfico de precipitación de Caycay
+
         ggplot(Pp_pisco, aes(fecha, CAICAY)) +
           geom_line() +
           geom_smooth(span = 0.5)
+Gráfico de precipitación de Ccatcca
+
         ggplot(Pp_pisco, aes(fecha, CCATCCA)) +
           geom_line() +
           geom_smooth(span = 0.5)
