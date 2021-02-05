@@ -98,6 +98,8 @@ Asignación de series temporales para las precipitaciones y temperaturas, se asi
         Paruro <- plot(Pp_pisco$fecha, Pp_pisco$PARURO, type = "l", col= 'blue',
                        main= 'Serie de Tiempo de la estación Paruro', xlab= 'Años',
                        ylab= 'Precipitación')
+![image](https://user-images.githubusercontent.com/78572913/107049584-49749880-6798-11eb-8bbc-6291cb2e85ec.png)
+
         colquepata <- plot(Pp_pisco$fecha,Pp_pisco$COLQUEPATA, type = "l", col= 'blue',
                            main= 'Serie de Tiempo de la estación Colquepata', xlab= 'Años',
                            ylab= 'Precipitación')
