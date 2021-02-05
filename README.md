@@ -1,4 +1,4 @@
-# Proyecto-final-programacion
+# MAPA DE PRECIPITACIÓN CON DATOS PISCO
 En este trabajo nos centraremos en la comparación de datos de Senamhi  de  5 estaciones del departamento de Cusco. 
 Este trabajo fue realizado por los siguientes estudiantes
 
