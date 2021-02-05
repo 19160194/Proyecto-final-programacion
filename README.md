@@ -11,6 +11,8 @@ León Chaiña  Lisbeth Karola
 Ramos Cerna Alejandra Gianella
 
 
+
+
 Primero instalamos las librerias
 
     install.packages(c("raster", "ncdf4"))
