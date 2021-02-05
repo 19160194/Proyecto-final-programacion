@@ -112,23 +112,23 @@ Asignación de series temporales para las precipitaciones y temperaturas, se asi
 ![Rplot](https://user-images.githubusercontent.com/78572913/107041783-e7fbfc00-678e-11eb-8c91-02ac8af39e89.png)
 
         Paruro <- plot(Pp_pisco$fecha, Pp_pisco$PARURO, type = "l", col= 'blue',
-                       main= 'Serie de Tiempo de la estación Paruro', xlab= 'Años',
-                       ylab= 'Precipitación')
+               main= 'Serie de Tiempo de la estación Paruro', xlab= 'Año',
+               ylab= 'Precipitación')
 ![image](https://user-images.githubusercontent.com/78572913/107049584-49749880-6798-11eb-8bbc-6291cb2e85ec.png)
 
         colquepata <- plot(Pp_pisco$fecha,Pp_pisco$COLQUEPATA, type = "l", col= 'blue',
-                           main= 'Serie de Tiempo de la estación Colquepata', xlab= 'Años',
-                           ylab= 'Precipitación')
+                   main= 'Serie de Tiempo de la estación Colquepata', xlab= 'Año',
+                   ylab= 'Precipitación')
 ![Rplot02](https://user-images.githubusercontent.com/77855207/107051577-9e191300-679a-11eb-8293-d13f09cf7413.png)
 
         catca <-  plot(Pp_pisco$fecha,Pp_pisco$CCATCCA, type = "l", col= 'blue',
-                       main= 'Serie de Tiempo de la estación ccatcca', xlab= 'Años',
-                       ylab= 'Precipitación')
+               main= 'Serie de Tiempo de la estación ccatcca', xlab= 'Año',
+               ylab= 'Precipitación')
 ![CCATCCA (1)](https://user-images.githubusercontent.com/77855207/107053516-e6d1cb80-679c-11eb-877b-d0c3c5bb3e4e.png)
 
         caycay <- plot(Pp_pisco$fecha,Pp_pisco$CAICAY, type = "l", col= 'blue',
-                       main= 'Serie de Tiempo de la estación Caicay', xlab= 'Años',
-                       ylab= 'Precipitación')
+               main= 'Serie de Tiempo de la estación Caicay', xlab= 'Año',
+               ylab= 'Precipitación')
 ![Rplot04](https://user-images.githubusercontent.com/77855207/107051957-17186a80-679b-11eb-9fb1-e3eef68e81c4.png)
 
  
