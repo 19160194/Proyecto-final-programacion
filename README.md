@@ -112,14 +112,11 @@ Asignación de series temporales para las precipitaciones y temperaturas, se asi
 ![Rplot04](https://user-images.githubusercontent.com/77855207/107051957-17186a80-679b-11eb-9fb1-e3eef68e81c4.png)
 
  
-        ########################################
-        #########graficas avanzadas###########
-        ########################################
-        #
+        
  Llamamos  a la librería GGPLOT,que nos ayuda a gráficar. 
  
             library(ggplot2)   
-Ahora  ejecutaremos el comando ggplot para graficar la  precipitación  en 
+Ahora  ejecutaremos el comando ggplot para graficar la  precipión-temperatura de Pisac
 
             ggplot(Pp_pisco, aes(fecha, PISAC)) +
               geom_line() +
@@ -129,7 +126,7 @@ Ahora  ejecutaremos el comando ggplot para graficar la  precipitación  en
           geom_smooth(span = 0.
 ![Rplot05](https://user-images.githubusercontent.com/78572913/107045499-90ac5a80-6793-11eb-99b6-0c940a4e3cdf.png)
 
-Asimismo, también ejecutaremos el ggplot para gráficar la precipitación de Paruro          
+Asimismo, también ejecutaremos el ggplot para gráficar la precipitación-Temperatura de Paruro          
 
         names(Pp_pisco)
         ggplot(Pp_pisco, aes(fecha, PARURO)) +
@@ -138,21 +135,21 @@ Asimismo, también ejecutaremos el ggplot para gráficar la precipitación de Pa
          
 ![Rplot06](https://user-images.githubusercontent.com/78572913/107046803-0b29aa00-6795-11eb-989b-e2c569c8fa44.png) 
 
-Gráfico de precipitación de colquepata 
+Gráfico de precipitación-temperatura de Colquepata
 
         ggplot(Pp_pisco, aes(fecha, COLQUEPATA)) +
           geom_line() +
           geom_smooth(span = 0.5)
 ![Rplot07](https://user-images.githubusercontent.com/78572913/107046981-4926ce00-6795-11eb-8320-669a8c04d0bf.png)
 
-Gráfico de precipitación de Caycay
+Gráfico de precipitación-temperatura Caycay
 
         ggplot(Pp_pisco, aes(fecha, CAICAY)) +
           geom_line() +
           geom_smooth(span = 0.5
 ![Rplot08](https://user-images.githubusercontent.com/78572913/107049819-8d679d80-6798-11eb-818b-e669c9b162aa.png)  
 
-Gráfico de precipitación de Ccatcca
+Gráfico de precipitación-Tempertura Ccatcca
 
         ggplot(Pp_pisco, aes(fecha, CCATCCA)) +
           geom_line() +
@@ -163,13 +160,13 @@ Gráfico de precipitación de Ccatcca
 
 Con la función de ggplot nos ayudamos para crear historigramas de las frecuencias de temperaturas
 
-Historigrama  de  Pisac
+Histograma de Pisac
 
         ggplot(tmedia_pisco, aes(PISAC)) + geom_histogram(colour= 'blue')
 ![Rplot10](https://user-images.githubusercontent.com/78572913/107051786-dd476400-679a-11eb-8642-672abe1b27ce.png)
 
 
-Historigrama de Paruro
+Histograma de Paruro
 
         ggplot(tmedia_pisco, aes(PARURO)) + geom_histogram(colour= 'blue')
  ![Rplot11](https://user-images.githubusercontent.com/78572913/107051830-e9332600-679a-11eb-8002-72eb1acfbc26.png) 
@@ -188,4 +185,5 @@ Histograma de CCatca
 Histograma de  CayCay
 
     ggplot(tmedia_pisco, aes(CAICAY)) + geom_histogram(colour= 'blue')    
+![Rplot14](https://user-images.githubusercontent.com/78572913/107053947-79726a80-679d-11eb-9f52-6d3013d1594b.png)
 
