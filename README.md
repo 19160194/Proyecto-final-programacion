@@ -128,10 +128,6 @@ Asignación de series temporales para las precipitaciones y temperaturas, se asi
 ![Rplot04](https://user-images.githubusercontent.com/77855207/107051957-17186a80-679b-11eb-9fb1-e3eef68e81c4.png)
 
  
-        ########################################
-        #########graficas avanzadas###########
-        ########################################
-        #
  Llamamos  a la librería GGPLOT,que nos ayuda a gráficar. 
  
             library(ggplot2)  
